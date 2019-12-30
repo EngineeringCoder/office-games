@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>{% block tittel %}Office Games{% endblock tittel %}</title>
+
+    <!-- TODO: Add Bootstrap -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body>
+    <!-- TODO: Add Navigation bar and site base ladesign -->
+    
+{% block innhold %}
+    {% comment %} Her skal innholdet på siden legges inn {% endcomment %}
+{% endblock innhold %}
+
+
+<!-- JS -->
+<script src="{% static 'js/base.js' %} "></script>
+{% block javascript %}
+    {% comment %} Her kan man legge inn ulike script som skal lastes inn til slutt på siden {% endcomment %}
+{% endblock javascript %}
+</body>
+</html>
