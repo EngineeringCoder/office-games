@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block content %}
+    <h2>Profiler</h2>
+
+    {% for profile in profile_list  %}
+        
+        <h4>{{ profile.name }} ({{ profile.joined|date:"M d, Y" }})</h4>
+        <h4>{{ profile.nickname }}</h4>
+        <h4></h4>
+
+    {% endfor %}
+
+{% endblock content %}
