@@ -18,5 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Local Apps
     path('',include('foosball.urls')),
+    path('profiles/',include('profile.urls')),
 ]
