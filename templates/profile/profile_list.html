@@ -2,7 +2,8 @@
 
 {% block content %}
     <h2>Profiler</h2>
-
+    <a href={% url 'home' %}>Home</a>
+    <a href={% url 'profile:create' %}>Create user</a>
     {% for profile in profile_list  %}
         
         <h4>{{ profile.name }} ({{ profile.joined|date:"M d, Y" }})</h4>
